@@ -1,0 +1,7 @@
+*.out
+*.tst
+*.cmp
+*.class
+*.bat
+projects/demo/
+

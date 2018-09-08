@@ -1,0 +1,23 @@
+CHIP Zero {
+    IN a[16];
+    OUT out;
+
+    PARTS:
+    Or(a=a[0], b=false, out=b0);
+    Or(a=a[1], b=b0, out=b1);
+    Or(a=a[2], b=b1, out=b2);
+    Or(a=a[3], b=b2, out=b3);
+    Or(a=a[4], b=b3, out=b4);
+    Or(a=a[5], b=b4, out=b5);
+    Or(a=a[6], b=b5, out=b6);
+    Or(a=a[7], b=b6, out=b7);
+    Or(a=a[8], b=b7, out=b8);
+    Or(a=a[9], b=b8, out=b9);
+    Or(a=a[10], b=b9, out=b10);
+    Or(a=a[11], b=b10, out=b11);
+    Or(a=a[12], b=b11, out=b12);
+    Or(a=a[13], b=b12, out=b13);
+    Or(a=a[14], b=b13, out=b14);
+    Or(a=a[15], b=b14, out=isOne);
+    Not(in=isOne, out=out);
+}

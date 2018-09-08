@@ -59,5 +59,10 @@ CHIP ALU {
 
     // see if we need to not it
     Not16(in=fout, out=nout);
-    Mux16(a=fout, b=nout, sel=no, out=out);
+    Mux16(a=fout, b=nout, sel=no, out=result);
+    Mux16(a=result, b=result, sel=false, out=out);
+    //Status
+    Negative(a=result, out=ng);
+    Zero(a=result, out=zr);
+
 }

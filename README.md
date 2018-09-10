@@ -15,3 +15,7 @@ Section two was a direct step up from the first section, I used the gates I desc
 
 ### Stuff
 All the chips are operating with 16 bit arrays and are using the [Two's Complement](https://en.wikipedia.org/wiki/Two%27s_complement) to represent positive and negative integers.
+
+
+# Three
+RAM! This section was all about creating the components in the computer that store data. More specifically, a bit, register, then several RAM chips that differ in size. As stated earlier, our registers are 16 bits wide. To create all these parts, I used the previously created chips and gates, and combined them with a Data Flip Flop chip, or [DFF](https://en.wikipedia.org/wiki/Flip-flop_(electronics)). The coolest part of this section was figuring out how data persists within a bit, how bits scale up to registers, and the most interesting, RAM chips. Figuring out how I can find the address, and change the value of a register in a RAM chip was surprisingly more straight forward than I initially thought it would be. Simply just using bit strings, DMux and Mux gates, we can find, and change the correct info.
